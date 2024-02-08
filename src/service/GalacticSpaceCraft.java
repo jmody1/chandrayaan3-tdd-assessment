@@ -1,5 +1,9 @@
 package service;
-
+/**
+ * 
+ * @author Jimit
+ *
+ */
 public class GalacticSpaceCraft {
 	private int x,y,z;
 	private char direction;
@@ -11,7 +15,7 @@ public class GalacticSpaceCraft {
 		this.z = z;
 		this.direction = direction;
 	}
-	
+	// API to be called for move forward command
 	public void moveForward() {
         switch (direction) {
             case 'N':
@@ -35,6 +39,7 @@ public class GalacticSpaceCraft {
         }
     }
 	
+	// API to be called for move backward command
 	public void moveBackward() {
         switch (direction) {
             case 'N':
@@ -58,6 +63,7 @@ public class GalacticSpaceCraft {
         }
     }
 	
+	// API to be called when turn left command entered
 	public void turnLeft() {
         switch (direction) {
             case 'N':
@@ -75,6 +81,7 @@ public class GalacticSpaceCraft {
         }
     }
 
+	// API to be called when turn right command entered
     public void turnRight() {
         switch (direction) {
             case 'N':
@@ -92,12 +99,14 @@ public class GalacticSpaceCraft {
         }
     }
     
+    // Changes the direction to Up for the turn up command
     public void turnUp() {
         if (direction != 'U') {
             direction = 'U';
         }
     }
 
+    // Changes the direction to Down for the turn down command
     public void turnDown() {
         if (direction != 'D') {
             direction = 'D';
