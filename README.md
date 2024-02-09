@@ -8,11 +8,16 @@ The project is organized as follows:
 
 chandrayaan3-tdd-assessment
 |-- src
-| |-- CommandProcessor.java
-| |-- GalacticSpaceCraft.java
-| |-- SpaceCraftDriver.java
+  |-- driver
+    |-- SpaceCraftDriver.java
+  |-- processor
+|   |-- CommandProcessor.java
+  |-- service
+|   |-- GalacticSpaceCraft.java
+| 
 |-- test
-| |-- GalacticSpaceCraftTest.java
+  |-- test
+|   |-- GalacticSpaceCraftTest.java
 |-- .classpath
 |-- .project
 |-- README.md
